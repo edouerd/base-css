@@ -1,4 +1,5 @@
 @import "colors";
+@import "grid-vars";
 
 /*
   Type scale:
@@ -139,9 +140,9 @@ h5,
 
 h1,
 .h1 {
-  font-size: 12rem;
+  font-size: 12rem; //48
   font-weight: 600;
-  line-height: 16rem;
+  line-height: 16rem; //64 
   margin: 4rem 0;
 }
 
@@ -191,6 +192,29 @@ caption, .text-sm {
   font-size: 5rem;
   line-height: 7rem;
 }
+
+.p-lg{
+  font-size: 5rem;
+  font-weight: 500;
+  line-height: 8rem;
+}
+/**********************
+  Discretionary ligatures
+**********************/
+
+.dlig {
+font-variant-ligatures: discretionary-ligatures;
+}
+
+/**********************
+  Responsive type
+**********************/
+
+/* @media #($viewport-sm) {
+  .sm-center{}
+} */
+
+
 
 /**********************
   Preformatted
