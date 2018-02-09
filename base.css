@@ -438,6 +438,8 @@ th {
     flex-grow: 1;
     flex-basis: 0;
     max-width: 100%; }
+  .sm-wrap-reverse {
+    flex-wrap: wrap-reverse; }
   .col-sm-1 {
     flex-basis: 8.33333333%;
     max-width: 8.33333333%; }
@@ -692,6 +694,27 @@ th {
     margin-left: 91.66666667%; } }
 
 /*
+  Fluid-to-fixed conversions at standard screen sizes:
+
+  iPhone (portrait) 320px:
+      - columns:          18px * 12 = 216px       // width: 3
+      - gutter:           6px  * 11 = 66px
+      - outer padding:    18px * 2  = 36px
+                                    = 318px
+
+  iPad (portrait) 768px:
+      - columns:          54px * 12 = 648px       // width: 9
+      - gutter:           6px  * 11 = 66px
+      - outer padding:    24px * 2  = 48px
+                                    = 762px
+
+  regular 960px:
+      - columns:          72px * 12 = 864px       // width: 12
+      - gutter:           6px  * 11 = 66px
+      - outer padding:    18px * 2  = 36px
+                                    = 966px
+*/
+/*
   Type scale:
 
   small   :  12px / 16px
@@ -858,6 +881,23 @@ caption, .text-sm {
   font-size: 5rem;
   line-height: 7rem; }
 
+.p-lg {
+  font-size: 5rem;
+  font-weight: 500;
+  line-height: 8rem; }
+
+/**********************
+  Discretionary ligatures
+**********************/
+.dlig {
+  font-variant-ligatures: discretionary-ligatures; }
+
+/**********************
+  Responsive type
+**********************/
+/* @media #($viewport-sm) {
+  .sm-center{}
+} */
 /**********************
   Preformatted
 **********************/
@@ -1166,45 +1206,6 @@ input[type="email"] {
 .circle-lg {
   padding: 4rem; }
 
-.circle-fill {
-  background-color: black; }
-
-.circle-red {
-  background-color: #EE3124;
-  border-color: #EE3124; }
-
-.circle-blue {
-  background-color: #4330FC;
-  border-color: #4330FC; }
-
-.circle-blue-light {
-  background-color: #A4D8E8;
-  border-color: #A4D8E8; }
-
-.circle-yellow {
-  background-color: #FFC440;
-  border-color: #FFC440; }
-
-.circle-green {
-  background-color: #6FDC74;
-  border-color: #6FDC74; }
-
-.circle-gray {
-  background-color: #5B5B5B;
-  border-color: #5B5B5B; }
-
-.circle-gray-light {
-  background-color: #D4D4D4;
-  border-color: #D4D4D4; }
-
-.circle-gray-lighter {
-  background-color: #f1f1f1;
-  border-color: #f1f1f1; }
-
-.circle-gray-dark {
-  background-color: #373A3C;
-  border-color: #373A3C; }
-
 .circle-pill {
   border-radius: 9999px;
   width: 10rem; }
@@ -1223,13 +1224,6 @@ input[type="email"] {
 
 .square-lg {
   padding: 4rem; }
-
-.square-fill {
-  background-color: black; }
-
-.square-red {
-  background-color: red;
-  border-color: red; }
 
 .square-rect {
   width: 10rem; }
@@ -1261,6 +1255,48 @@ input[type="email"] {
   border-top: 2rem solid transparent;
   border-bottom: 2rem solid transparent;
   border-right: 4rem solid black; }
+
+/**********************
+  Shape Colors
+**********************/
+.shape-black {
+  background-color: black; }
+
+.shape-red {
+  background-color: #EE3124;
+  border-color: #EE3124; }
+
+.shape-blue {
+  background-color: #4330FC;
+  border-color: #4330FC; }
+
+.shape-blue-light {
+  background-color: #A4D8E8;
+  border-color: #A4D8E8; }
+
+.shape-yellow {
+  background-color: #FFC440;
+  border-color: #FFC440; }
+
+.shape-green {
+  background-color: #6FDC74;
+  border-color: #6FDC74; }
+
+.shape-gray {
+  background-color: #5B5B5B;
+  border-color: #5B5B5B; }
+
+.shape-gray-light {
+  background-color: #D4D4D4;
+  border-color: #D4D4D4; }
+
+.shape-gray-lighter {
+  background-color: #f1f1f1;
+  border-color: #f1f1f1; }
+
+.shape-gray-dark {
+  background-color: #373A3C;
+  border-color: #373A3C; }
 
 /**********************
   Urbit logo

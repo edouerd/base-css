@@ -21,55 +21,6 @@
   padding: 4rem;
 }
 
-.circle-fill {
-  background-color: black;
-}
-
-.circle-red {
-  background-color: $red;
-  border-color: $red;
-}
-
-.circle-blue {
-  background-color: $blue;
-  border-color: $blue;
-}
-
-.circle-blue-light {
-  background-color: $blue-light;
-  border-color: $blue-light;
-}
-
-.circle-yellow {
-  background-color: $yellow;
-  border-color: $yellow;
-}
-
-.circle-green {
-  background-color: $green;
-  border-color: $green;
-}
-
-.circle-gray {
-  background-color: $gray;
-  border-color: $gray;
-}
-
-.circle-gray-light {
-  background-color: $gray-light;
-  border-color: $gray-light;
-}
-
-.circle-gray-lighter {
-  background-color: $gray-lighter;
-  border-color: $gray-lighter;
-}
-
-.circle-gray-dark {
-  background-color: $gray-dark;
-  border-color: $gray-dark;
-}
-
 .circle-pill {
   border-radius: 9999px;
   width: 10rem;
@@ -93,15 +44,6 @@
 
 .square-lg {
   padding: 4rem;
-}
-
-.square-fill {
-  background-color: black;
-}
-
-.square-red {
-  background-color: red;
-  border-color: red;
 }
 
 .square-rect {
@@ -142,7 +84,57 @@
   border-bottom: 2rem solid transparent;
   border-right: 4rem solid black;
 }
+/**********************
+  Shape Colors
+**********************/
+.shape-black {
+  background-color: black;
+}
 
+.shape-red {
+  background-color: $red;
+  border-color: $red;
+}
+
+.shape-blue {
+  background-color: $blue;
+  border-color: $blue;
+}
+
+.shape-blue-light {
+  background-color: $blue-light;
+  border-color: $blue-light;
+}
+
+.shape-yellow {
+  background-color: $yellow;
+  border-color: $yellow;
+}
+
+.shape-green {
+  background-color: $green;
+  border-color: $green;
+}
+
+.shape-gray {
+  background-color: $gray;
+  border-color: $gray;
+}
+
+.shape-gray-light {
+  background-color: $gray-light;
+  border-color: $gray-light;
+}
+
+.shape-gray-lighter {
+  background-color: $gray-lighter;
+  border-color: $gray-lighter;
+}
+
+.shape-gray-dark {
+  background-color: $gray-dark;
+  border-color: $gray-dark;
+}
 /**********************
   Urbit logo
 **********************/
