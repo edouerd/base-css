@@ -4,12 +4,14 @@ label {
 }
 
 textarea,
-input[type="text"] {
+input[type="text"],
+input[type="email"] {
   border: 2px solid black;
   padding: 12px;
   width: 100%;
   outline: none;
 }
+
 
 .error-label {
   display: none;
