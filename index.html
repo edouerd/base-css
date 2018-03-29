@@ -20,11 +20,9 @@
           <p class="mb-4">As an open source project, the design guidelines for Urbit are necesarrily open.  Evolving the look and feel of Urbit is intended to be a community project.  Criticism is welcome; criticism in the form of a pull request is even better.</p>
           <ul class="h4 list-reset h-font">
             <li>
-              Type
+              Typography
               <ul class="h5 list-reset ml-4">
-                <li><a href="#type">General type rules</a></li>
-                <li><a href="#headings">Headings</a></li>
-                <li><a href="#body">Body</a></li>
+                <li><a href="#type">Type scale</a></li>
                 <li><a href="#alignment">Alignment</a></li>
                 <li><a href="#modifiers">Modifiers</a></li>
                 <li><a href="#blockquotes">Blockquotes</a></li>
@@ -57,82 +55,125 @@
         </section>
 
         <section class="mb-16">
-          <h1 id="type">Type</h1>
-
-          <h2>General type rules</h2>
-          <p class="mb-12">There is a certain glibness in calling someone a legend, but if there's any artist worthy of the title it's Barbara Hammer, whose nearly 50-year career has spanned disciplines and broken boundaries, but has focused most especially on moving images. </p>
-
-          <h2 id="headings">Headings</h2>
-          <div class="mb-6">
-            <h1>Heading 1 48/64 px</h1>
-            <h2>Heading 2 36/52 px</h2>
-            <h3>Heading 3 24/32 px</h3>
-            <h4>Heading 4 20/28 px</h4>
-            <h5>Heading 5 20/28 px</h5>
+          <h1 id="type">Typography</h1>
+          <h2>Type scale</h2>
+          <p>Our base grid is a power of 4. Therefore, our type scale moves in increments of 4. We use two fonts: Work Sans and San Francisco</p>
+          <p class="mb-12">
+            Work Sans (Semibold) is for headings. San Francisco is for body copy. The type scale and corresponding HTML tags can be seen below.
+          </p>
+          <div class="mb-12">
+            <code>&#x3C;h1&#x3E; (48/64 px)</code>
+            <h1 class="mb-6">Heading 1</h1>
+            <code>&#x3C;h2&#x3E; (36/52 px)</code>
+            <h2 class="mb-6">Heading 2 </h2>
+            <code>&#x3C;h3&#x3E; (24/32 px)</code>
+            <h3 class="mt-4 mb-6">Heading 3</h3>
+            <code>&#x3C;h4&#x3E; (20/28 px)</code>
+            <h4 class="mt-4 mb-6">Heading 4</h4>
+            <code>&#x3C;h5&#x3E; (16/24 px)</code>
+            <h5 class="mt-4 mb-6">Heading 5 Medium</h5>
+            <code>&#x3C;p&#x3E; (16/24 px)</code>
+            <p class="mt-4 mb-6">This is a body paragraph set in San Francisco. This time I know where I am going, it is no longer the ancient night, the recent night. Now it is a game, I am going to play. I never knew how to play, till now. I longed to, but I knew it was impossible.</p>
           </div>
 
-          <pre class="mb-12">
-&#x3C;h1&#x3E;Why painting?&#x3C;/h1&#x3E;
-&#x3C;h2&#x3E;Why painting?&#x3C;/h2&#x3E;
-&#x3C;h3&#x3E;Why painting?&#x3C;/h3&#x3E;
-&#x3C;h4&#x3E;Why painting?&#x3C;/h4&#x3E;
-&#x3C;h5&#x3E;Why painting?&#x3C;/h5&#x3E;</pre>
+          <pre>
+&#x3C;h1&#x3E;Heading 1&#x3C;/h1&#x3E;
+&#x3C;h2&#x3E;Heading 2&#x3C;/h2&#x3E;
+&#x3C;h3&#x3E;Heading 3&#x3C;/h3&#x3E;
+&#x3C;h4&#x3E;Heading 4&#x3C;/h4&#x3E;
+&#x3C;h5&#x3E;Heading 5&#x3C;/h5&#x3E;
+&#x3C;p&#x3E;[...]&#x3C;/p&#x3E;</pre>
 
-          <h2 id="body">Body</h2>
-          <p class="mb-12">There is a certain glibness in calling someone a legend, but if there's any artist worthy of the title it's Barbara Hammer, whose nearly 50-year career has spanned disciplines and broken boundaries, but has focused most especially on moving images. </p>
-
-          <h2 id="alignment">Alignment</h2>
-          <h4>Left aligned (default)</h3>
-          <p>This time I know where I am going, it is no longer the ancient night, the recent night.  Now it is a game, I am going to play.  I never knew how to play, till now.  I longed to, but I knew it was impossible.  And yet I often tried.  I turned on all the lights, I took a good look all round, I began to play with what I saw.</p>
-          <pre class="mb-6">&#x3C;p&#x3E;[...]&#x3C;/p&#x3E;</pre>
-          <h4>Justified</h3>
-          <p class="justify">This time I know where I am going, it is no longer the ancient night, the recent night.  Now it is a game, I am going to play.  I never knew how to play, till now.  I longed to, but I knew it was impossible.  And yet I often tried.  I turned on all the lights, I took a good look all round, I began to play with what I saw.</p>
-          <pre class="mb-6">&#x3C;p class=&#x22;justify&#x22;&#x3E;[...]&#x3C;/p&#x3E;</pre>
-          <h4>Right aligned</h3>
-          <p class="right">This time I know where I am going, it is no longer the ancient night, the recent night.  Now it is a game, I am going to play.  I never knew how to play, till now.  I longed to, but I knew it was impossible.  And yet I often tried.  I turned on all the lights, I took a good look all round, I began to play with what I saw.</p>
-          <pre class="mb-6">&#x3C;p class=&#x22;right&#x22;&#x3E;[...]&#x3C;/p&#x3E;</pre>
-          <h4>Centered</h3>
-          <p class="center">This time I know where I am going, it is no longer the ancient night, the recent night.  Now it is a game, I am going to play.  I never knew how to play, till now.  I longed to, but I knew it was impossible.  And yet I often tried.  I turned on all the lights, I took a good look all round, I began to play with what I saw.</p>
+          <h2 class="pt-20" id="alignment">Alignment</h2>
+          <p>Use these typography helper classes to change text alignment. Left-alignment is the default, but <code>.left</code> is also available.</p>
+          <h3 class="mb-4">Centered</h3>
+          <code>.center</code>
+          <p class="mt-4 center">This time I know where I am going, it is no longer the ancient night, the recent night.  Now it is a game, I am going to play.  I never knew how to play, till now.  I longed to, but I knew it was impossible.  And yet I often tried.  I turned on all the lights, I took a good look all round, I began to play with what I saw.</p>
           <pre class="mb-12">&#x3C;p class=&#x22;center&#x22;&#x3E;[...]&#x3C;/p&#x3E;</pre>
+          <h3 class="mb-4">Justified</h3>
+          <code>.justified</code>
+          <p class="mt-4 justify">This time I know where I am going, it is no longer the ancient night, the recent night.  Now it is a game, I am going to play.  I never knew how to play, till now.  I longed to, but I knew it was impossible.  And yet I often tried.  I turned on all the lights, I took a good look all round, I began to play with what I saw.</p>
+          <pre class="mb-6">&#x3C;p class=&#x22;justify&#x22;&#x3E;[...]&#x3C;/p&#x3E;</pre>
+          <h3 class="mb-4">Right</h3>
+          <code>.right</code>
+          <p class="mt-4 right">This time I know where I am going, it is no longer the ancient night, the recent night.  Now it is a game, I am going to play.  I never knew how to play, till now.  I longed to, but I knew it was impossible.  And yet I often tried.  I turned on all the lights, I took a good look all round, I began to play with what I saw.</p>
+          <pre class="mb-6">&#x3C;p class=&#x22;right&#x22;&#x3E;[...]&#x3C;/p&#x3E;</pre>
+          <h3 class="mb-4">Left (default)</h3>
+          <code>.left</code>
+          <p class="mt-4">This time I know where I am going, it is no longer the ancient night, the recent night.  Now it is a game, I am going to play.  I never knew how to play, till now.  I longed to, but I knew it was impossible.  And yet I often tried.  I turned on all the lights, I took a good look all round, I began to play with what I saw.</p>
+          <pre>&#x3C;p&#x3E;[...]&#x3C;/p&#x3E;</pre>
+          <pre>&#x3C;p class=&#x22;left&#x22;&#x3E;[...]&#x3C;/p&#x3E;</pre>
 
-          <h2 id="modifiers">Modifiers</h2>
-          <h4>Size</h4>
-          <p class="text-lg">Now it is a game, I am going to play.</p>
-          <p class="text-md">Now it is a game, I am going to play.</p>
-          <p>Now it is a game, I am going to play.</p>
-          <p class="text-sm">Now it is a game, I am going to play.</p>
+          <h2 class="pt-20" id="modifiers">Modifiers</h2>
+          <p class="mb-4">Modifiers are used to modify text size, formatting, case, and weight. Default to heading and body fonts in most cases and only use modifiers in special situations.</p>
+          <h3>Size</h3>
+          <h4 class="mt-2 mb-2">Large text</h4>
+          <code>.text-lg (20 px)</code>
+          <p class="mt-4 mb-4 text-lg">Now it is a game, I am going to play.</p>
+          <h4 class="mt-2 mb-2">Medium text</h4>
+          <code>.text-md (16 px)</code>
+          <p class="mt-4 mb-4 text-md">Now it is a game, I am going to play.</p>
+          <h4 class="mt-2 mb-2">Small text</h4>
+          <code>.text-sm (12 px)</code>
+          <p class="mt-4 text-sm">Now it is a game, I am going to play.</p>
 
           <pre class="mb-6">&#x3C;p class=&#x22;text-lg&#x22;&#x3E;Now it is a game, I am going to play.&#x3C;/p&#x3E;
 &#x3C;p class=&#x22;text-md&#x22;&#x3E;Now it is a game, I am going to play.&#x3C;/p&#x3E;
 &#x3C;p&#x3E;Now it is a game, I am going to play.&#x3C;/p&#x3E;
 &#x3C;p class=&#x22;text-sm&#x22;&#x3E;Now it is a game, I am going to play.&#x3C;/p&#x3E;</pre>
-          <h4>Formatting</h4>
-          <p><u>Such is the earnestness from which I have never been able to depart.</u></p>
-          <p class="underline">Such is the earnestness from which I have never been able to depart.</p>
-          <pre class="mb-4">&#x3C;p&#x3E;&#x3C;u&#x3E;Such is the earnestness from which I have never been able to depart.&#x3C;/u&#x3E;&#x3C;/p&#x3E;
+          <h3>Formatting</h3>
+          <h4>Underline</h4>
+          <p class="mb-4">There are two ways to underline: using the HTML tag <code>&#x3C;u&#x3E;</code> or the utility class <code>.underline</code>.</p>
+          <code>&#x3C;u&#x3E;</code>
+          <p class="mt-2 mb-6"><u>Such is the earnestness from which I have never been able to depart.</u></p>
+          <code>.underline</code>
+          <p class="mt-2 mb-6 underline">Such is the earnestness from which I have never been able to depart.</p>
+          <pre class="mb-12">&#x3C;p&#x3E;&#x3C;u&#x3E;Such is the earnestness from which I have never been able to depart.&#x3C;/u&#x3E;&#x3C;/p&#x3E;
 &#x3C;p class=&#x22;underline&#x22;&#x3E;Such is the earnestness from which I have never been able to depart.&#x3C;/p&#x3E;</pre>
-          <p><s>To have been able to conceive such a plan is encouraging.</s></p>
-          <p class="strikethrough">To have been able to conceive such a plan is encouraging.</p>
-          <pre>&lt;p&gt;&lt;s&gt;To have been able to conceive such a plan is encouraging.&lt;/s&gt;&lt;/p&gt;
+
+          <h4>Strikethrough</h4>
+          <p class="mb-4">There are two ways to underline: using the HTML tag <code>&#x3C;s&#x3E;</code> or the utility class <code>.strikethrough</code>.</p>
+          <code>&#x3C;s&#x3E;</code>
+          <p class="mt-2 mb-6"><s>To have been able to conceive such a plan is encouraging.</s></p>
+          <code>.strikethrough</code>
+          <p class="mt-2 mb-6 strikethrough">To have been able to conceive such a plan is encouraging.</p>
+          <pre class="mb-12">&lt;p&gt;&lt;s&gt;To have been able to conceive such a plan is encouraging.&lt;/s&gt;&lt;/p&gt;
 &lt;p class=&quot;strikethrough&quot;&gt;To have been able to conceive such a plan is encouraging.&lt;/p&gt;</pre>
-          <p><em>Such is the earnestness from which I have never been able to depart.</em></p>
-          <p class="italic">Such is the earnestness from which I have never been able to depart.</p>
-          <pre class="mb-6">&lt;p&gt;&lt;em&gt;Such is the earnestness from which I have never been able to depart.&lt;/em&gt;&lt;/p&gt;
+
+          <h4>Italic</h4>
+          <p class="mb-4">There are two ways to italicize: <code>&#x3C;em&#x3E;</code> or the utility class <code>.italic</code>.</p>
+          <code>&#x3C;em&#x3E;</code>
+          <p class="mt-2 mb-6"><em>Such is the earnestness from which I have never been able to depart.</em></p>
+          <code>.italic</code>
+          <p class="mt-2 mb-6 italic">Such is the earnestness from which I have never been able to depart.</p>
+          <pre class="mb-12">&lt;p&gt;&lt;em&gt;Such is the earnestness from which I have never been able to depart.&lt;/em&gt;&lt;/p&gt;
 &lt;p class=&quot;italic&quot;&gt;Such is the earnestness from which I have never been able to depart.&lt;/p&gt;</pre>
+
           <h4>Case</h4>
-          <p class="capitalize">To have been able to conceive such a plan is encouraging.</p>
-          <pre>&lt;p class=&quot;capitalize&quot;&gt;To have been able to conceive such a plan is encouraging.&lt;/p&gt;</pre>
-          <p class="uppercase">Such is the earnestness from which I have never been able to depart.</p>
-          <pre class="mb-6">&lt;p class=&quot;uppercase&quot;&gt;Such is the earnestness from which I have never been able to depart.&lt;/p&gt;</pre>
-          <h4>Weight</h4>
-          <p class="text-300">To have been able to conceive such a plan is encouraging.</p>
-          <p class="text-400">Such is the earnestness from which I have never been able to depart.</p>
-          <p class="text-500">To have been able to conceive such a plan is encouraging.</p>
-          <p class="text-600">Such is the earnestness from which I have never been able to depart.</p>
-          <p class="text-700">To have been able to conceive such a plan is encouraging.</p>
-          <p><b>To have been able to conceive such a plan is encouraging.</b></p>
-          <p class="text-800">Such is the earnestness from which I have never been able to depart.</p>
-          <pre class="mb-12">&lt;p class=&quot;text-300&quot;&gt;To have been able to conceive such a plan is encouraging.&lt;/p&gt;
+          <p class="mb-4">We provide two utility classes for cases: Sentence case and uppercase.</p>
+          <code>.capitalize</code>
+          <p class="mt-2 capitalize">To have been able to conceive such a plan is encouraging.</p>
+          <pre class="mb-6">&lt;p class=&quot;capitalize&quot;&gt;To have been able to conceive such a plan is encouraging.&lt;/p&gt;</pre>
+          <code>.uppercase</code>
+          <p class="mt-2 uppercase">Such is the earnestness from which I have never been able to depart.</p>
+          <pre class="mb-12">&lt;p class=&quot;uppercase&quot;&gt;Such is the earnestness from which I have never been able to depart.&lt;/p&gt;</pre>
+
+          <h4 class="mb-4">Weight</h4>
+          <code>.text-300</code>
+          <p class="mt-2 mb-4 text-300">To have been able to conceive such a plan is encouraging.</p>
+          <code>.text-400</code>
+          <p class="mt-2 mb-4 text-400">Such is the earnestness from which I have never been able to depart.</p>
+          <code>.text-500</code>
+          <p class="mt-2 mb-4 text-500">To have been able to conceive such a plan is encouraging.</p>
+          <code>.text-600</code>
+          <p class="mt-2 mb-4 text-600">Such is the earnestness from which I have never been able to depart.</p>
+          <code>.text-700</code>
+          <p class="mt-2 mb-4 text-700">To have been able to conceive such a plan is encouraging.</p>
+          <code>&#x3C;b&#x3E;</code>
+          <p class="mt-2 mb-4"><b>To have been able to conceive such a plan is encouraging.</b></p>
+          <code>.text-800</code>
+          <p class="mt-2 mb-4 text-800">Such is the earnestness from which I have never been able to depart.</p>
+          <pre class="mb-20">&lt;p class=&quot;text-300&quot;&gt;To have been able to conceive such a plan is encouraging.&lt;/p&gt;
 &lt;p class=&quot;text-400&quot;&gt;Such is the earnestness from which I have never been able to depart.&lt;/p&gt;
 &lt;p class=&quot;text-500&quot;&gt;To have been able to conceive such a plan is encouraging.&lt;/p&gt;
 &lt;p class=&quot;text-600&quot;&gt;Such is the earnestness from which I have never been able to depart.&lt;/p&gt;
@@ -141,47 +182,64 @@
 &lt;p class=&quot;text-800&quot;&gt;Such is the earnestness from which I have never been able to depart.&lt;/p&gt;</pre>
 
           <h2 id="blockquotes">Blockquotes</h2>
+          <code>&#x3C;blockquote&#x3E;</code>
           <blockquote>As I've grown as an artist, I've learned that my mission statement is really self-expression. I don't want anybody to classify my music. I want them to say, "This is somebody who's recognizing his true feelings, his true emotions, ideas, thoughts, opinions, and views on the world, all on one record."</blockquote>
           <pre class="mb-12">&lt;blockquote&gt;As I&apos;ve grown as an artist, I&apos;ve learned that my mission statement is really self-expression. I don&apos;t want anybody to classify my music. I want them to say, &quot;This is somebody who&apos;s recognizing his true feelings, his true emotions, ideas, thoughts, opinions, and views on the world, all on one record.&quot;&lt;/blockquote&gt;</pre>
 
           <h2 id="code">Code</h2>
+          <code>&#x3C;code&#x3E;</code>
           <p>Sometimes you need to <code>?:  =(0 (mod count 15))</code> just for a minute.</p>
           <pre class="mb-6">&lt;p&gt;Sometimes, you need to &lt;code&gt;?:  =(0 (mod count 15))&lt;/code&gt; just for a minute.&lt;/p&gt;</pre>
           <p>And then, ocassionally, you'd rather:</p>
           <pre>
 > (add 2 2)
 4</pre>
-          <pre class="mb-12">&lt;pre&gt;
+          <pre class="mb-20">&lt;pre&gt;
 &gt; (add 2 2)
 4
 &lt;/pre&gt;</pre>
 
           <h2 id="colors">Colored / highlighted text</h2>
-          <p class="blue">I was so proud of you!</p>
-          <p class="green">I was so proud of you!</p>
-          <p class="red">I was so proud of you!</p>
+          <code>.blue</code>
+          <p class="mt-2 mb-4 blue">This is blue text</p>
+          <code>.green</code>
+          <p class="mt-2 mb-4 green">This is green text</p>
+          <code>.red</code>
+          <p class="mt-2 mb-4 red">This is red text</p>
           <pre class="mb-6">&lt;p class=&quot;blue&quot;&gt;I was so proud of you!&lt;/p&gt;
 &lt;p class=&quot;green&quot;&gt;I was so proud of you!&lt;/p&gt;
 &lt;p class=&quot;red&quot;&gt;I was so proud of you!&lt;/p&gt;</pre>
-          <p class="gray-lighter">I was so proud of you!</p>
-          <p class="gray-light">I was so proud of you!</p>
-          <p class="gray">I was so proud of you!</p>
-          <p class="gray-dark">I was so proud of you!</p>
+          <code>.gray-lighter</code>
+          <p class="mt-2 mb-4 gray-lighter">I was so proud of you!</p>
+          <code>.gray-light</code>
+          <p class="mt-2 mb-4 gray-light">I was so proud of you!</p>
+          <code>.gray</code>
+          <p class="mt-2 mb-4 gray">I was so proud of you!</p>
+          <code>.gray-dark</code>
+          <p class="mt-2 mb-4 gray-dark">I was so proud of you!</p>
           <pre class="mb-6">&lt;p class=&quot;gray-lighter&quot;&gt;I was so proud of you!&lt;/p&gt;
 &lt;p class=&quot;gray-light&quot;&gt;I was so proud of you!&lt;/p&gt;
 &lt;p class=&quot;gray&quot;&gt;I was so proud of you!&lt;/p&gt;
 &lt;p class=&quot;gray-dark&quot;&gt;I was so proud of you!&lt;/p&gt;</pre>
-          <p><span class="blue-hl">I was so proud of you!</span></p>
-          <p><span class="green-hl">I was so proud of you!</span></p>
-          <p><span class="red-hl">I was so proud of you!</span></p>
+          <code>.blue-hl</code>
+          <p class="mt-2 mb-4"><span class="blue-hl">This is a blue highlight</span></p>
+          <code>.green-hl</code>
+          <p class="mt-2 mb-4"><span class="green-hl">This is a green highlight</span></p>
+          <code>.red-hl</code>
+          <p class="mt-2 mb-4"><span class="red-hl">This is a red highlight</span></p>
           <pre>&lt;p&gt;&lt;span class=&quot;blue-hl&quot;&gt;I was so proud of you!&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;green-hl&quot;&gt;I was so proud of you!&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;red-hl&quot;&gt;I was so proud of you!&lt;/span&gt;&lt;/p&gt;</pre>
-          <p><span class="gray-lighter-hl">I was so proud of you!</span></p>
-          <p><span class="gray-light-hl">I was so proud of you!</span></p>
-          <p><span class="gray-hl">I was so proud of you!</span></p>
-          <p><span class="gray-dark-hl">I was so proud of you!</span></p>
-          <p><span class="black-hl">I was so proud of you!</span></p>
+          <code>.gray-lighter-hl</code>
+          <p class="mt-2 mb-4"><span class="gray-lighter-hl">This is a gray lighter highlight</span></p>
+          <code>.gray-light-hl</code>
+          <p class="mt-2 mb-4"><span class="gray-light-hl">This is a gray light highlight</span></p>
+          <code>.gray-hl</code>
+          <p class="mt-2 mb-4"><span class="gray-hl">This is a gray highlight</span></p>
+          <code>.gray-dark-hl</code>
+          <p class="mt-2 mb-4"><span class="gray-dark-hl">This is a gray dark highlight</span></p>
+          <code>.black</code>
+          <p class="mt-2 mb-4"><span class="black-hl">I was so proud of you!</span></p>
           <pre class="mb-12">&lt;p&gt;&lt;span class=&quot;gray-lighter-hl&quot;&gt;I was so proud of you!&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;gray-light-hl&quot;&gt;I was so proud of you!&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;gray-hl&quot;&gt;I was so proud of you!&lt;/span&gt;&lt;/p&gt;
@@ -249,8 +307,7 @@
 <!--- --->
 
           <h2 id="grid">Layout and grids</h2>
-          <p>There is a certain glibness in calling someone a legend, but if there's any artist worthy of the title it's Barbara Hammer, whose nearly 50-year career has spanned disciplines and broken boundaries, but has focused most especially on moving images. </p>
-
+          <p class="mb-6">We use a classic 12 column grid. Our columns are percentage-based and rely on Flexbox. Grids are mobile-first by default and responsive breakpoints can be added as screen sizes increase. Responsive breakpoints are prefixed with <code>sm,md,lg</code>.</p>
           <h3>Percent-based 12 column grid</h3>
           <div class="row mb-1">
             <div class="col-sm-2">
@@ -286,7 +343,7 @@
             </div>
           </div>
 
-          <pre class="mb-3">&lt;div class=&quot;row mb-1&quot;&gt;
+          <pre class="mb-12">&lt;div class=&quot;row mb-1&quot;&gt;
   &lt;div class=&quot;col-sm-2&quot;&gt;
     &lt;div class=&quot;black-hl text-md text-mono text-700 center&quot;&gt;col-2&lt;/div&gt;
   &lt;/div&gt;
@@ -320,7 +377,7 @@
   &lt;/div&gt;
 &lt;/div&gt;</pre>
 
-          <h4 class="mb-2">With breakpoints</h4>
+          <h3 class="mb-4">Responsive breakpoints</h3>
           <div class="row mb-1">
             <div class="col-sm">
               <div class="black-hl text-md text-mono text-700 center">sm</div>
@@ -355,7 +412,7 @@
             </div>
           </div>
 
-          <pre class="mb-6">&lt;div class=&quot;row mb-1&quot;&gt;
+          <pre class="mb-12">&lt;div class=&quot;row mb-1&quot;&gt;
   &lt;div class=&quot;col-sm&quot;&gt;
     &lt;div class=&quot;black-hl text-md text-mono text-700 center&quot;&gt;sm&lt;/div&gt;
   &lt;/div&gt;
@@ -390,7 +447,7 @@
 &lt;/div&gt;</pre>
 
           <h3 id="width">Fixed width / height utilities</h3>
-          <p class="mb4">Hammer was raised in Hollywood, California. It wasn't until her early thirties that she left her husband, came out as lesbian, and, inspired by the experimental filmmaker Maya Deren, began making short, scintillating films of her own.</p>
+          <p class="mb-4">Width and height utility classes follow the base grid of 4. Consider grid classes before using fixed width/height utility classes.</p>
           <div class="flex mb-1">
             <div class="w-12 black-hl text-md text-mono text-700 center mr-3 p-1">w-12</div>
             <div class="w-16 black-hl text-md text-mono text-700 center mr-3 p-1">w-16</div>
@@ -424,7 +481,7 @@
 &lt;/div&gt;</pre>
 
           <h3 id="margin">Margin / padding utilities</h3>
-          <p class="mb-4">Hammer was raised in Hollywood, California. It wasn't until her early thirties that she left her husband, came out as lesbian, and, inspired by the experimental filmmaker Maya Deren, began making short, scintillating films of her own.</p>
+          <p class="mb-4">Margin / padding utility classes follow the base grid of 4. Currently there are 99 steps for both margin and padding.</p>
 
           <div class="row">
             <div class="black-hl text-md text-mono text-700 center mr-3 p-1 mb-1">mb-1</div>
@@ -493,7 +550,7 @@
         <section>
           <h3 id="buttons" class="mt-12">Buttons</h3>
 
-          <p class="mt-2 mb-4">Hammer was raised in Hollywood, California. It wasn't until her early thirties that she left her husband, came out as lesbian, and, inspired by the experimental filmmaker Maya Deren, began making short, scintillating films of her own.</p>
+          <p class="mt-2 mb-4">Buttons should be used according to priority. We have regular-sized buttons and small buttons.</p>
 
           <div class="row">
             <button class="btn mr-2">Action</button>
@@ -529,7 +586,7 @@
 
           <h3 id="forms" class="mt-12">Forms</h3>
 
-          <p class="mt-2 mb-4">Hammer was raised in Hollywood, California. It wasn't until her early thirties that she left her husband, came out as lesbian, and, inspired by the experimental filmmaker Maya Deren, began making short, scintillating films of her own.</p>
+          <p class="mt-2 mb-4">Form inputs are always styled with an outline. You can combine these with button classes to create forms. </p>
 
           <div class="row">
             <div class="col-md-4">
@@ -709,39 +766,30 @@
 &lt;div class=&quot;circle circle-lg shape-black&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;circle circle-lg shape-red&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;circle circle-lg circle-pill&quot;&gt;&lt;/div&gt;</pre>
+
         </section>
 
-        <section class="mb-16">
-          <h3 class="mt-12">Code blocks</h3>
+      <section class="mt-16 mb-16">
+        <h2>Source code & contributing</h2>
+        <h3>Contributing</h3>
+        <h4>For designers</h4>
+        <p>We welcome thoughts and feedback on the visual design that don't come with changes to the code. Just open an issue and let us know what you're thinking about.</p>
+        <h4>For developers</h4>
+        <p>Pull requests are more than welcome.</p>
 
-          <p class="mt-2 mb-4">Hammer was raised in Hollywood, California. It wasn't until her early thirties that she left her husband, came out as lesbian, and, inspired by the experimental filmmaker Maya Deren, began making short, scintillating films of her own.</p>
 
-          <pre class="code-block"><code class="text-code">++  watch-dir
-|=  a/path
-^-  (list move)
-=/  soc/sock
-[our.hid our.hid]
-=/  rav/rave
-[%next %z da+now.hid a]
-=/  rif/riff
-[%home [~ rav]]
-=/  car/card
-:^
-%warp
-a
-soc
-rif
-[[ost.hid car] ~]
-          </code></pre>
-
-          <p>(The code for the above is)</p>
-
-          <pre>&lt;pre class=&quot;code-block&quot;&gt;&lt;code class=&quot;text-code&quot;&gt;
-  ...
-&lt;/code&gt;&lt;/pre&gt;</pre>
+        <h2>Prior work & influences</h2>
+        <a href="http://tachyons.io">Tachyons</a>
+        <a href="http://basscss.com">Basscss</a>
+        <a href="http://getbootstrap.com">Bootstrap</a>
+        <a href="https://purecss.io">Pure.css</a>
+        <a href="http://getskeleton.com">Skeleton.css</a>
+        <a href="http://flexboxgrid.com">Flexbox grid</a>
+        <a href="https://material.io/guidelines/">Material Design</a>
         </section>
-        <p>===</p>
-        <p class="mb-32">Happy coding!</p>
+
+
+
       </div>
     </article>
   </div>

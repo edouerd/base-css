@@ -172,9 +172,9 @@ h4,
 
 h5,
 .h5 {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 500;
-  line-height: 7rem;
+  line-height: 6rem;
   margin: 1rem 0;
 }
 
@@ -343,7 +343,7 @@ b, .text-700 {
 
 .gray-lighter-hl {
   background-color: $gray-lighter;
-  color: #fff;
+  color: #111; // placeholder
 }
 
 .gray-light-hl {

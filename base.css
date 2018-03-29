@@ -815,8 +815,7 @@ body {
   color: #373A3C; }
 
 a {
-  color: black;
-  text-decoration-skip: ink; }
+  color: black; }
 
 p {
   margin: 0 0 2rem; }
@@ -864,9 +863,9 @@ h4,
 
 h5,
 .h5 {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 500;
-  line-height: 7rem;
+  line-height: 6rem;
   margin: 1rem 0; }
 
 caption, .text-sm {
@@ -879,11 +878,6 @@ caption, .text-sm {
 
 .text-lg {
   font-size: 5rem;
-  line-height: 7rem; }
-
-.p-lg {
-  font-size: 5rem;
-  font-weight: 500;
   line-height: 8rem; }
 
 /**********************
@@ -1001,7 +995,7 @@ b, .text-700 {
 
 .gray-lighter-hl {
   background-color: #f1f1f1;
-  color: #fff; }
+  color: #111; }
 
 .gray-light-hl {
   background-color: #D4D4D4;
@@ -1036,7 +1030,8 @@ b, .text-700 {
 **********************/
 button {
   border: none;
-  outline: none; }
+  outline: none;
+  border-radius: 0; }
 
 button, .btn {
   font-family: "Work Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1084,7 +1079,8 @@ input[type="text"],
 input[type="email"] {
   border: 2px solid black;
   padding: 12px;
-  width: 100%; }
+  width: 100%;
+  outline: none; }
 
 .error-label {
   display: none;
