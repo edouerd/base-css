@@ -196,6 +196,8 @@ caption, .text-sm {
   Discretionary ligatures
 **********************/
 
+// Circled numerals
+
 .dlig {
 font-variant-ligatures: discretionary-ligatures;
 }
@@ -292,78 +294,6 @@ b, .text-700 {
 
 .h-font {
   font-family: "Work Sans";
-}
-
-/**********************
-  Colors
-**********************/
-
-.blue {
-  color: $blue;
-}
-
-.green {
-  color: $green;
-}
-
-.red {
-  color: $red;
-}
-
-.gray-lighter {
-  color: $gray-lighter;
-}
-
-.gray-light {
-  color: $gray-light;
-}
-
-.gray {
-  color: $gray;
-}
-
-.gray-dark {
-  color: $gray-dark;
-}
-
-.blue-hl {
-  background-color: $blue;
-  color: #fff;
-}
-
-.green-hl {
-  background-color: $green;
-  color: #fff;
-}
-
-.red-hl {
-  background-color: $red;
-  color: #fff;
-}
-
-.gray-lighter-hl {
-  background-color: $gray-lighter;
-  color: #111; // placeholder
-}
-
-.gray-light-hl {
-  background-color: $gray-light;
-  color: #fff;
-}
-
-.gray-hl {
-  background-color: $gray;
-  color: #fff;
-}
-
-.gray-dark-hl {
-  background-color: $gray-dark;
-  color: #fff;
-}
-
-.black-hl {
-  background-color: #000;
-  color: #fff;
 }
 
 /**********************
