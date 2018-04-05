@@ -112,7 +112,6 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 4rem;
   line-height: 6rem;
-  color: $gray-dark;
 }
 
 a {
@@ -135,7 +134,7 @@ h5,
 .text-heading {
   margin: 0;
   font-family: "Work Sans";
-  color: $gray-dark;
+  color: $gray;
 }
 
 h1,
@@ -218,7 +217,7 @@ font-variant-ligatures: discretionary-ligatures;
 
 pre,
 code {
-  background-color: $gray-lighter;
+  background-color: $gray-10;
   padding: 1rem;
 }
 
@@ -230,12 +229,12 @@ code,
 }
 
 .text-code {
-  background-color: $gray-lighter;
-  color: black;
+  background-color: $gray-10;
+  color: $black;
 }
 
 .code-block {
-  background-color: $gray-lighter;
+  background-color: $gray-10;
   padding: 5rem;
   white-space: pre-wrap;
 }

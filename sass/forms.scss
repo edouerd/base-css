@@ -15,8 +15,8 @@ input[type="email"] {
 
 .error-label {
   display: none;
-  color: #FF4444;
-  font-size: 2.33rem;
+  color: $red;
+  font-size: 4rem;
   line-height: 3rem;
   margin-top: 1rem;
 }
@@ -28,7 +28,7 @@ input[type="email"] {
 .input-group.error {
   textarea,
   input[type="text"] {
-    border: .5rem solid #FF4444;
+    border: .5rem solid $red;
   }
 
   .error-label {
@@ -48,7 +48,7 @@ input[type="email"] {
   display: flex;
   border: 2px solid black;
   overflow: hidden;
-  background-color: white;
+  background-color: $white;
 }
 
 .select-dropdown select {
@@ -64,6 +64,12 @@ input[type="email"] {
 .select-dropdown select:focus {
   outline: none;
 }
+
+.triangle-down {
+  border-left: 2rem solid transparent;
+  border-right: 2rem solid transparent;
+  border-top: 4rem solid black; }
+
 
 .select-dropdown .triangle-down {
   border-width: 2rem 1rem 0rem 1rem;

@@ -13,11 +13,12 @@ $orange: #FFC440;
 
 
 // Neutral Colors
-
-$gray-lighter: #F1F1F1;
-$gray-light: #D4D4D4;
-$gray: #5B5B5B;
-$gray-dark: #373A3C;
+$white: #FFFFFF;
+$gray-10: #F2F2F2;
+$gray-30: #B3B3B3;
+$gray-60: #666666;
+$gray: #333333;
+$black: #111111;
 
 // $gray-100
 // $gray-80
@@ -25,8 +26,6 @@ $gray-dark: #373A3C;
 // $gray-10
 
 
-$black: #111111;
-$white: #FFFFFF;
 
 /**********************
 Text color
@@ -44,63 +43,22 @@ Text color
   color: $red;
 }
 
-.gray-lighter {
-  color: $gray-lighter;
+.gray-10 {
+  color: $gray-10;
 }
 
-.gray-light {
-  color: $gray-light;
+.gray-30 {
+  color: $gray-30;
+}
+
+.gray-60 {
+  color: $gray-60;
 }
 
 .gray {
   color: $gray;
 }
 
-.gray-dark {
-  color: $gray-dark;
-}
-
-// Highlight
-
-.blue-hl {
-  background-color: $blue;
-  color: #$white;
-}
-
-.green-hl {
-  background-color: $green;
-  color: $white;
-}
-
-.red-hl {
-  background-color: $red;
-  color: $white;
-}
-
-.gray-lighter-hl {
-  background-color: $gray-lighter;
-  color: $black;
-}
-
-.gray-light-hl {
-  background-color: $gray-light;
-  color: $white;
-}
-
-.gray-hl {
-  background-color: $gray;
-  color: $white;
-}
-
-.gray-dark-hl {
-  background-color: $gray-dark;
-  color: $white;
-}
-
-.black-hl {
-  background-color: $black;
-  color: $white;
-}
 
 /**********************
   Shape Colors
@@ -134,22 +92,22 @@ Text color
   border-color: $green;
 }
 
+.shape-gray-60 {
+  background-color: $gray-60;
+  border-color: $gray-60;
+}
+
+.shape-gray-30 {
+  background-color: $gray-30;
+  border-color: $gray-30;
+}
+
+.shape-gray-10 {
+  background-color: $gray-10;
+  border-color: $gray-10;
+}
+
 .shape-gray {
   background-color: $gray;
   border-color: $gray;
-}
-
-.shape-gray-light {
-  background-color: $gray-light;
-  border-color: $gray-light;
-}
-
-.shape-gray-lighter {
-  background-color: $gray-lighter;
-  border-color: $gray-lighter;
-}
-
-.shape-gray-dark {
-  background-color: $gray-dark;
-  border-color: $gray-dark;
 }
