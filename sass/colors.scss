@@ -101,3 +101,55 @@ Text color
   background-color: $black;
   color: $white;
 }
+
+/**********************
+  Shape Colors
+**********************/
+.shape-black {
+  background-color: black;
+}
+
+.shape-red {
+  background-color: $red;
+  border-color: $red;
+}
+
+.shape-blue {
+  background-color: $blue;
+  border-color: $blue;
+}
+
+.shape-blue-light {
+  background-color: $blue-light;
+  border-color: $blue-light;
+}
+
+.shape-orange {
+  background-color: $orange;
+  border-color: $orange;
+}
+
+.shape-green {
+  background-color: $green;
+  border-color: $green;
+}
+
+.shape-gray {
+  background-color: $gray;
+  border-color: $gray;
+}
+
+.shape-gray-light {
+  background-color: $gray-light;
+  border-color: $gray-light;
+}
+
+.shape-gray-lighter {
+  background-color: $gray-lighter;
+  border-color: $gray-lighter;
+}
+
+.shape-gray-dark {
+  background-color: $gray-dark;
+  border-color: $gray-dark;
+}
