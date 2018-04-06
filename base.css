@@ -710,6 +710,12 @@ Text color
 .gray {
   color: #333333; }
 
+.black {
+  color: #111111; }
+
+.white {
+  color: #FFFFFF; }
+
 /**********************
   Shape Colors
 **********************/
@@ -870,13 +876,14 @@ Text color
 body {
   font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 4rem;
-  line-height: 6rem; }
+  line-height: 6rem;
+  color: #111111; }
 
 a {
   color: black; }
 
 p {
-  margin: 0 0 2rem; }
+  margin: 0 0 4rem; }
 
 /**********************
   Headings
@@ -960,6 +967,7 @@ code {
 
 pre,
 code,
+.code-block,
 .text-code,
 .text-mono {
   font-family: "Source Code Pro", "Roboto mono", "Courier New", monospace; }
@@ -1028,75 +1036,6 @@ b, .text-700 {
   text-align: justify; }
 
 /**********************
-Color variables
-**********************/
-/**********************
-Text color
-**********************/
-.blue {
-  color: #4330FC; }
-
-.green {
-  color: #6FDC74; }
-
-.red {
-  color: #EE3124; }
-
-.gray-10 {
-  color: #F2F2F2; }
-
-.gray-30 {
-  color: #B3B3B3; }
-
-.gray-60 {
-  color: #666666; }
-
-.gray {
-  color: #333333; }
-
-/**********************
-  Shape Colors
-**********************/
-.shape-black {
-  background-color: black; }
-
-.shape-red {
-  background-color: #EE3124;
-  border-color: #EE3124; }
-
-.shape-blue {
-  background-color: #4330FC;
-  border-color: #4330FC; }
-
-.shape-blue-light {
-  background-color: #A4D8E8;
-  border-color: #A4D8E8; }
-
-.shape-orange {
-  background-color: #FFC440;
-  border-color: #FFC440; }
-
-.shape-green {
-  background-color: #6FDC74;
-  border-color: #6FDC74; }
-
-.shape-gray-60 {
-  background-color: #666666;
-  border-color: #666666; }
-
-.shape-gray-30 {
-  background-color: #B3B3B3;
-  border-color: #B3B3B3; }
-
-.shape-gray-10 {
-  background-color: #F2F2F2;
-  border-color: #F2F2F2; }
-
-.shape-gray {
-  background-color: #333333;
-  border-color: #333333; }
-
-/**********************
   Buttons
 **********************/
 button {
@@ -1148,7 +1087,7 @@ label {
 textarea,
 input[type="text"],
 input[type="email"] {
-  border: 2px solid black;
+  border: 2px solid #111111;
   padding: 12px;
   width: 100%;
   outline: none; }
@@ -1156,7 +1095,7 @@ input[type="email"] {
 .error-label {
   display: none;
   color: #EE3124;
-  font-size: 4rem;
+  font-size: 2.33rem;
   line-height: 3rem;
   margin-top: 1rem; }
 
@@ -1288,6 +1227,12 @@ Text color
 
 .gray {
   color: #333333; }
+
+.black {
+  color: #111111; }
+
+.white {
+  color: #FFFFFF; }
 
 /**********************
   Shape Colors
@@ -1426,75 +1371,6 @@ Text color
   border-color: black; }
   .urbit-logo-solid:before {
     color: black; }
-
-/**********************
-Color variables
-**********************/
-/**********************
-Text color
-**********************/
-.blue {
-  color: #4330FC; }
-
-.green {
-  color: #6FDC74; }
-
-.red {
-  color: #EE3124; }
-
-.gray-10 {
-  color: #F2F2F2; }
-
-.gray-30 {
-  color: #B3B3B3; }
-
-.gray-60 {
-  color: #666666; }
-
-.gray {
-  color: #333333; }
-
-/**********************
-  Shape Colors
-**********************/
-.shape-black {
-  background-color: black; }
-
-.shape-red {
-  background-color: #EE3124;
-  border-color: #EE3124; }
-
-.shape-blue {
-  background-color: #4330FC;
-  border-color: #4330FC; }
-
-.shape-blue-light {
-  background-color: #A4D8E8;
-  border-color: #A4D8E8; }
-
-.shape-orange {
-  background-color: #FFC440;
-  border-color: #FFC440; }
-
-.shape-green {
-  background-color: #6FDC74;
-  border-color: #6FDC74; }
-
-.shape-gray-60 {
-  background-color: #666666;
-  border-color: #666666; }
-
-.shape-gray-30 {
-  background-color: #B3B3B3;
-  border-color: #B3B3B3; }
-
-.shape-gray-10 {
-  background-color: #F2F2F2;
-  border-color: #F2F2F2; }
-
-.shape-gray {
-  background-color: #333333;
-  border-color: #333333; }
 
 /**********************
   Base elements

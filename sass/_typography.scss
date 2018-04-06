@@ -112,6 +112,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 4rem;
   line-height: 6rem;
+  color: $black;
 }
 
 a {
@@ -119,7 +120,7 @@ a {
 }
 
 p {
-  margin: 0 0 2rem;
+  margin: 0 0 4rem;
 }
 
 /**********************
@@ -223,6 +224,7 @@ code {
 
 pre,
 code,
+.code-block,
 .text-code,
 .text-mono {
   font-family: "Source Code Pro", "Roboto mono", "Courier New", monospace;
