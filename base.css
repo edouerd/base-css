@@ -842,77 +842,8 @@ th {
 Color variables
 **********************/
 /**********************
-Text color
+  Background
 **********************/
-.blue {
-  color: #4330FC; }
-
-.green {
-  color: #6FDC74; }
-
-.red {
-  color: #EE3124; }
-
-.gray-10 {
-  color: #F2F2F2; }
-
-.gray-30 {
-  color: #B3B3B3; }
-
-.gray-60 {
-  color: #666666; }
-
-.gray {
-  color: #333333; }
-
-.black {
-  color: #111111; }
-
-.white {
-  color: #FFFFFF; }
-
-/**********************
-  Shape Colors
-**********************/
-.shape-black {
-  background-color: black; }
-
-.shape-red {
-  background-color: #EE3124;
-  border-color: #EE3124; }
-
-.shape-blue {
-  background-color: #4330FC;
-  border-color: #4330FC; }
-
-.shape-blue-light {
-  background-color: #A4D8E8;
-  border-color: #A4D8E8; }
-
-.shape-orange {
-  background-color: #FFC440;
-  border-color: #FFC440; }
-
-.shape-green {
-  background-color: #6FDC74;
-  border-color: #6FDC74; }
-
-.shape-gray-60 {
-  background-color: #666666;
-  border-color: #666666; }
-
-.shape-gray-30 {
-  background-color: #B3B3B3;
-  border-color: #B3B3B3; }
-
-.shape-gray-10 {
-  background-color: #F2F2F2;
-  border-color: #F2F2F2; }
-
-.shape-gray {
-  background-color: #333333;
-  border-color: #333333; }
-
 .bg-black {
   background-color: #111111; }
 
@@ -921,81 +852,6 @@ Text color
 
 .bg-gray-30 {
   background-color: #B3B3B3; }
-
-/**********************
-Color variables
-**********************/
-/**********************
-Text color
-**********************/
-.blue {
-  color: #4330FC; }
-
-.green {
-  color: #6FDC74; }
-
-.red {
-  color: #EE3124; }
-
-.gray-10 {
-  color: #F2F2F2; }
-
-.gray-30 {
-  color: #B3B3B3; }
-
-.gray-60 {
-  color: #666666; }
-
-.gray {
-  color: #333333; }
-
-.black {
-  color: #111111; }
-
-.white {
-  color: #FFFFFF; }
-
-/**********************
-  Shape Colors
-**********************/
-.shape-black {
-  background-color: black; }
-
-.shape-red {
-  background-color: #EE3124;
-  border-color: #EE3124; }
-
-.shape-blue {
-  background-color: #4330FC;
-  border-color: #4330FC; }
-
-.shape-blue-light {
-  background-color: #A4D8E8;
-  border-color: #A4D8E8; }
-
-.shape-orange {
-  background-color: #FFC440;
-  border-color: #FFC440; }
-
-.shape-green {
-  background-color: #6FDC74;
-  border-color: #6FDC74; }
-
-.shape-gray-60 {
-  background-color: #666666;
-  border-color: #666666; }
-
-.shape-gray-30 {
-  background-color: #B3B3B3;
-  border-color: #B3B3B3; }
-
-.shape-gray-10 {
-  background-color: #F2F2F2;
-  border-color: #F2F2F2; }
-
-.shape-gray {
-  background-color: #333333;
-  border-color: #333333; }
 
 /*
   Fluid-to-fixed conversions at standard screen sizes:
@@ -1263,6 +1119,36 @@ b, .text-700 {
   font-family: "Work Sans"; }
 
 /**********************
+Text color
+**********************/
+.blue {
+  color: #4330FC; }
+
+.green {
+  color: #6FDC74; }
+
+.red {
+  color: #EE3124; }
+
+.gray-10 {
+  color: #F2F2F2; }
+
+.gray-30 {
+  color: #B3B3B3; }
+
+.gray-60 {
+  color: #666666; }
+
+.gray {
+  color: #333333; }
+
+.black {
+  color: #111111; }
+
+.white {
+  color: #FFFFFF; }
+
+/**********************
   Alignment
 **********************/
 .center {
@@ -1441,37 +1327,45 @@ input[type="email"] {
   border-top: 0 solid transparent; }
 
 /**********************
-Color variables
+  Shapes
 **********************/
-/**********************
-Text color
-**********************/
-.blue {
-  color: #4330FC; }
+.circle {
+  display: inline-block;
+  padding: 2rem;
+  border-radius: 50%;
+  border: 2px solid black;
+  text-align: center; }
 
-.green {
-  color: #6FDC74; }
+.circle-sm {
+  padding: 1rem; }
 
-.red {
-  color: #EE3124; }
+.circle-lg {
+  padding: 4rem; }
 
-.gray-10 {
-  color: #F2F2F2; }
+.circle-pill {
+  border-radius: 9999px;
+  width: 10rem; }
 
-.gray-30 {
-  color: #B3B3B3; }
+.circle-pill.circle-lg {
+  width: 20rem; }
 
-.gray-60 {
-  color: #666666; }
+.square {
+  display: inline-block;
+  padding: 2rem;
+  border: 2px solid black;
+  text-align: center; }
 
-.gray {
-  color: #333333; }
+.square-sm {
+  padding: 1rem; }
 
-.black {
-  color: #111111; }
+.square-lg {
+  padding: 4rem; }
 
-.white {
-  color: #FFFFFF; }
+.square-rect {
+  width: 10rem; }
+
+.square-rect.square-lg {
+  width: 20rem; }
 
 /**********************
   Shape Colors
@@ -1515,71 +1409,15 @@ Text color
   background-color: #333333;
   border-color: #333333; }
 
-/**********************
-  Shapes
-**********************/
-.circle {
-  display: inline-block;
-  padding: 2rem;
-  border-radius: 50%;
-  border: 2px solid black;
-  text-align: center; }
-
-.circle-sm {
-  padding: 1rem; }
-
-.circle-lg {
-  padding: 4rem; }
-
-.circle-pill {
-  border-radius: 9999px;
-  width: 10rem; }
-
-.circle-pill.circle-lg {
-  width: 20rem; }
-
-.square {
-  display: inline-block;
-  padding: 2rem;
-  border: 2px solid black;
-  text-align: center; }
-
-.square-sm {
-  padding: 1rem; }
-
-.square-lg {
-  padding: 4rem; }
-
-.square-rect {
-  width: 10rem; }
-
-.square-rect.square-lg {
-  width: 20rem; }
-
 .triangle-base {
   display: inline-block;
   width: 0;
   height: 0; }
 
-.triangle-up {
-  border-left: 2rem solid transparent;
-  border-right: 2rem solid transparent;
-  border-bottom: 4rem solid black; }
-
 .triangle-down {
   border-left: 2rem solid transparent;
   border-right: 2rem solid transparent;
   border-top: 4rem solid black; }
-
-.triangle-right {
-  border-top: 2rem solid transparent;
-  border-bottom: 2rem solid transparent;
-  border-left: 4rem solid black; }
-
-.triangle-left {
-  border-top: 2rem solid transparent;
-  border-bottom: 2rem solid transparent;
-  border-right: 4rem solid black; }
 
 /**********************
   Urbit logo
