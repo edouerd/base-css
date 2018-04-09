@@ -282,12 +282,13 @@
   &lt;li&gt;Who, in the last 10 years, has been invaluable as a mentor?&lt;/li&gt;
   &lt;li&gt;I&apos;m always like, &quot;Diane, what do you think?&quot;&lt;/li&gt;
 &lt;/ol&gt;</pre>
+    </section>
 
 <!--- --->
-
+          <h1 class="mb-10" id="grid">Layout</h1>
           <h2 id="grid">Layout & grids</h2>
-          <p class="mb-6">We use a classic 12 column grid. Our columns are percentage-based and rely on Flexbox. Grids are mobile-first by default and responsive breakpoints can be added as screen sizes increase. Responsive breakpoints are prefixed with <code>sm,md,lg</code>.</p>
-          <h3>Percent-based 12 column grid</h3>
+          <p class="mb-12">We use a classic 12 column grid. Our columns are percentage-based and rely on Flexbox. Grids are mobile-first by default and responsive breakpoints can be added as screen sizes increase. Responsive breakpoints are prefixed with <code>sm,md,lg</code>.</p>
+          <h3 class="mb-4">Percent-based 12 column grid</h3>
           <div class="row mb-1">
             <div class="col-sm-2">
               <div class="bg-gray-30 text-md text-mono text-700 center">col-2</div>
@@ -426,7 +427,7 @@
 &lt;/div&gt;</pre>
 
           <h3 id="width">Fixed width / height utilities</h3>
-          <p class="mb-4">Width and height utility classes follow the base grid of 4. Consider grid classes before using fixed width/height utility classes.</p>
+          <p class="mb-6">Width and height utility classes follow the base grid of 4. Consider grid classes before using fixed width/height utility classes.</p>
           <div class="flex mb-1">
             <div class="w-12 bg-gray-30 text-md text-mono text-700 center mr-3 p-1">w-12</div>
             <div class="w-16 bg-gray-30 text-md text-mono text-700 center mr-3 p-1">w-16</div>
@@ -460,7 +461,7 @@
 &lt;/div&gt;</pre>
 
           <h3 id="margin">Margin / padding utilities</h3>
-          <p class="mb-4">Margin / padding utility classes follow the base grid of 4. Currently there are 99 steps for both margin and padding.</p>
+          <p class="mb-6">Margin / padding utility classes follow the base grid of 4. Currently there are 99 steps for both margin and padding.</p>
 
           <div class="row">
             <div class="bg-gray-30 text-md text-mono text-700 center mr-3 p-1 mb-1">mb-1</div>
@@ -488,33 +489,15 @@
     &lt;div class=&quot;bg-gray-30 text-md text-mono text-700 center mr-3 p-1 mt-1&quot;&gt;mt-1&lt;/div&gt;
   &lt;/div&gt;</pre>
 
-          <p>The properties exposed for these utilities are given by the following Sass definitions.</p>
-          <p>Property values 0 - 99 are currently available ($sizing-count == 99)</p>
-
-          <pre>@for $i from 0 through $sizing-count {
-  .w-#{$i} {width: #{$i}rem;} // Example: .w-12: 12rem;
-  .h-#{$i} {height: #{$i}rem;} // Example: .h-12: 12rem;
-  .m-#{$i} {margin: #{$i}rem;} // Example: .m-12: 12rem;
-  .mt-#{$i} {margin-top: #{$i}rem;} // Example: .mt-12: 12rem;
-  .mb-#{$i} {margin-bottom: #{$i}rem;} // Example: .mb-12: 12rem;
-  .ml-#{$i} {margin-left: #{$i}rem;} // Example: .ml-12: 12rem;
-  .mr-#{$i} {margin-right: #{$i}rem;} // Example: .mr-12: 12rem;
-  .p-#{$i} {padding: #{$i}rem;} // Example: .p-12: 12rem;
-  .pt-#{$i} {margin-top: #{$i}rem;} // Example: .pt-12: 12rem;
-  .pb-#{$i} {padding-bottom: #{$i}rem;} // Example: .pb-12: 12rem;
-  .pl-#{$i} {padding-left: #{$i}rem;} // Example: .pl-12: 12rem;
-  .pr-#{$i} {padding-right: #{$i}rem;} // Example: pr-12: 12rem;
-}</pre>
-
 
           <h3 id="centering" class="mt-12">Vertical / horizontal centering</h3>
 
           <div class="row">
             <div class="col-md-6">
-              <p>Use of Flexbox is encouraged.</p>
-              <p>For example, here is how you center an element inside of another element</p>
+              <p>Use of Flexbox is encouraged. For example, here is how you center an element inside of another element.</p>
+
             </div>
-            <div class="col-md-4 col-md-offset-2">
+            <div class="col-md-10">
               <div class="w-48 h-48 bg-gray-30 text-md row items-center justify-center">
                 <div>Center me!</div>
               </div>
@@ -529,13 +512,13 @@
         <section>
           <h3 id="buttons" class="mt-12">Buttons</h3>
 
-          <p class="mt-2 mb-4">Buttons should be used according to priority. We have regular-sized buttons and small buttons.</p>
+          <p class="mt-2 mb-6">Buttons should be used according to priority. We have regular-sized buttons and small buttons.</p>
 
-          <div class="row">
+          <div class="row mb-2">
             <button class="btn mr-2">Action</button>
             <button class="btn mr-2 btn-primary">Action</button>
             <button class="btn mr-2 btn-secondary">Action</button>
-            <button class="btn mr-2 btn-tetiary">Action</button>
+            <button class="btn mr-2 btn-tertiary">Action</button>
             <button class="btn mr-2 btn-warning">Serious action</button>
           </div>
 
@@ -543,7 +526,7 @@
             <button class="btn btn-sm mr-2">Action</button>
             <button class="btn btn-sm mr-2 btn-primary">Action</button>
             <button class="btn btn-sm mr-2 btn-secondary">Action</button>
-            <button class="btn btn-sm mr-2 btn-tetiary">Action</button>
+            <button class="btn btn-sm mr-2 btn-tertiary">Action</button>
             <button class="btn btn-sm mr-2 btn-warning">Serious action</button>
           </div>
 
@@ -551,7 +534,7 @@
   &lt;button class=&quot;btn mr-2&quot;&gt;Action&lt;/button&gt;
   &lt;button class=&quot;btn mr-2 btn-primary&quot;&gt;Action&lt;/button&gt;
   &lt;button class=&quot;btn mr-2 btn-secondary&quot;&gt;Action&lt;/button&gt;
-  &lt;button class=&quot;btn mr-2 btn-tetiary&quot;&gt;Action&lt;/button&gt;
+  &lt;button class=&quot;btn mr-2 btn-tertiary&quot;&gt;Action&lt;/button&gt;
   &lt;button class=&quot;btn mr-2 btn-warning&quot;&gt;Serious action&lt;/button&gt;
 &lt;/div&gt;
 
@@ -559,7 +542,7 @@
   &lt;button class=&quot;btn btn-sm mr-2&quot;&gt;Action&lt;/button&gt;
   &lt;button class=&quot;btn btn-sm mr-2 btn-primary&quot;&gt;Action&lt;/button&gt;
   &lt;button class=&quot;btn btn-sm mr-2 btn-secondary&quot;&gt;Action&lt;/button&gt;
-  &lt;button class=&quot;btn btn-sm mr-2 btn-tetiary&quot;&gt;Action&lt;/button&gt;
+  &lt;button class=&quot;btn btn-sm mr-2 btn-tertiary&quot;&gt;Action&lt;/button&gt;
   &lt;button class=&quot;btn btn-sm mr-2 btn-warning&quot;&gt;Serious action&lt;/button&gt;
 &lt;/div&gt;</pre>
 
@@ -748,13 +731,13 @@
 
         </section>
 
-      <section class="mt-16 mb-16">
+      <section class="mt-24 mb-60">
         <h2 id="source-code">Source code & contributing</h2>
-        <h3>Contributing</h3>
+        <h3 class="mb-6">Contributing</h3>
         <h4>For designers</h4>
-        <p>We welcome thoughts and feedback on the visual design that don't come with changes to the code. Just open an issue and let us know what you're thinking about.</p>
+        <p class="mb-10">We welcome thoughts and feedback on the visual design that don't come with changes to the code. Just open an issue and let us know what you're thinking about.</p>
         <h4>For developers</h4>
-        <p>Pull requests are more than welcome.</p>
+        <p class="mb-10">Pull requests are more than welcome.</p>
 
 
         <h2 id="influences">Prior work & influences</h2>
