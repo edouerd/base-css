@@ -844,6 +844,30 @@ Color variables
 /**********************
   Background
 **********************/
+.bg-blue {
+  background-color: #4330FC; }
+
+.bg-red {
+  background-color: #EE3124; }
+
+.bg-green {
+  background-color: #6FDC74; }
+
+.bg-orange {
+  background-color: #FFC440; }
+
+.bg-gray {
+  background-color: #333333; }
+
+.bg-gray-60 {
+  background-color: #666666; }
+
+.bg-gray-30 {
+  background-color: #B3B3B3; }
+
+.bg-gray-10 {
+  background-color: #F2F2F2; }
+
 .bg-black {
   background-color: #111111; }
 
