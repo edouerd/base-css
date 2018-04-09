@@ -1,4 +1,4 @@
-@import "colors";
+
 @import "grid-vars";
 
 /*
@@ -112,7 +112,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 4rem;
   line-height: 6rem;
-  color: $gray-dark;
+  color: $black;
 }
 
 a {
@@ -120,7 +120,7 @@ a {
 }
 
 p {
-  margin: 0 0 2rem;
+  margin: 0 0 4rem;
 }
 
 /**********************
@@ -135,7 +135,7 @@ h5,
 .text-heading {
   margin: 0;
   font-family: "Work Sans";
-  color: $gray-dark;
+  color: $gray;
 }
 
 h1,
@@ -172,9 +172,9 @@ h4,
 
 h5,
 .h5 {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 500;
-  line-height: 7rem;
+  line-height: 6rem;
   margin: 1rem 0;
 }
 
@@ -196,6 +196,8 @@ caption, .text-sm {
   Discretionary ligatures
 **********************/
 
+// Circled numerals
+
 .dlig {
 font-variant-ligatures: discretionary-ligatures;
 }
@@ -216,24 +218,25 @@ font-variant-ligatures: discretionary-ligatures;
 
 pre,
 code {
-  background-color: $gray-lighter;
+  background-color: $gray-10;
   padding: 1rem;
 }
 
 pre,
 code,
+.code-block,
 .text-code,
 .text-mono {
   font-family: "Source Code Pro", "Roboto mono", "Courier New", monospace;
 }
 
 .text-code {
-  background-color: $gray-lighter;
-  color: black;
+  background-color: $gray-10;
+  color: $black;
 }
 
 .code-block {
-  background-color: $gray-lighter;
+  background-color: $gray-10;
   padding: 5rem;
   white-space: pre-wrap;
 }
@@ -295,7 +298,7 @@ b, .text-700 {
 }
 
 /**********************
-  Colors
+Text color
 **********************/
 
 .blue {
@@ -310,60 +313,28 @@ b, .text-700 {
   color: $red;
 }
 
-.gray-lighter {
-  color: $gray-lighter;
+.gray-10 {
+  color: $gray-10;
 }
 
-.gray-light {
-  color: $gray-light;
+.gray-30 {
+  color: $gray-30;
+}
+
+.gray-60 {
+  color: $gray-60;
 }
 
 .gray {
   color: $gray;
 }
 
-.gray-dark {
-  color: $gray-dark;
+.black {
+  color: $black;
 }
 
-.blue-hl {
-  background-color: $blue;
-  color: #fff;
-}
-
-.green-hl {
-  background-color: $green;
-  color: #fff;
-}
-
-.red-hl {
-  background-color: $red;
-  color: #fff;
-}
-
-.gray-lighter-hl {
-  background-color: $gray-lighter;
-  color: #fff;
-}
-
-.gray-light-hl {
-  background-color: $gray-light;
-  color: #fff;
-}
-
-.gray-hl {
-  background-color: $gray;
-  color: #fff;
-}
-
-.gray-dark-hl {
-  background-color: $gray-dark;
-  color: #fff;
-}
-
-.black-hl {
-  background-color: #000;
-  color: #fff;
+.white{
+  color: $white;
 }
 
 /**********************

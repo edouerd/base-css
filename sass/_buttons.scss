@@ -1,4 +1,4 @@
-@import "colors";
+
 
 /**********************
   Buttons
@@ -18,7 +18,7 @@ button, .btn {
 
   padding: 3rem 6rem;
   color: black;
-  background-color: $gray-light;
+  background-color: $gray-30;
 
   margin: 0 0 6px;
 }
@@ -38,8 +38,8 @@ button, .btn {
   background-color: $green;
 }
 
-.btn-tetiary {
-  background-color: $gray;
+.btn-tertiary {
+  background-color: $gray-60;
   color: white;
 }
 
@@ -54,7 +54,7 @@ button, .btn {
   }
 
   .btn:not(.active) {
-    background-color: $gray-light;
+    background-color: $gray-30;
     color: black;
   }
 }
