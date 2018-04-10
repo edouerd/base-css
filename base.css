@@ -1241,11 +1241,13 @@ button, .btn {
 
 label {
   display: block;
+  margin-bottom: 1rem;
   font-weight: 700; }
 
 textarea,
 input[type="text"],
-input[type="email"] {
+input[type="email"],
+input[type="number"] {
   border: 2px solid #111111;
   padding: 12px;
   width: 100%;
@@ -1254,19 +1256,25 @@ input[type="email"] {
 .error-label {
   display: none;
   color: #EE3124;
-  font-size: 2.33rem;
-  line-height: 3rem;
-  margin-top: 1rem; }
+  font-size: 4rem;
+  line-height: 4rem;
+  margin-top: 2rem; }
 
 .input-group {
   margin: 0 0 2rem; }
 
 .input-group.error textarea,
-.input-group.error input[type="text"] {
+.input-group.error input[type="text"],
+.input-group.error input[type="email"] {
   border: 0.5rem solid #EE3124; }
 
 .input-group.error .error-label {
   display: block; }
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0; }
 
 .checkbox-group label,
 .checkbox-group input,

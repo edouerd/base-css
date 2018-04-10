@@ -440,19 +440,33 @@
           <h3 id="width">Fixed width / height utilities</h3>
           <p class="mb-6">Width and height utility classes follow the base grid of 4. Consider grid classes before using fixed width/height utility classes.</p>
           <div class="flex mb-1">
-            <div class="w-12 bg-gray-30 text-md text-mono text-700 center mr-3 p-1">w-12</div>
-            <div class="w-16 bg-gray-30 text-md text-mono text-700 center mr-3 p-1">w-16</div>
-            <div class="w-20 bg-gray-30 text-md text-mono text-700 center mr-3 p-1">w-20</div>
-          </div>
-          <div class="flex mb-1">
-            <div class="w-12 h-12 bg-gray-30 text-md text-mono text-700 center mr-3 p-1">w-12<br />h-12</div>
-            <div class="w-16 h-16 bg-gray-30 text-md text-mono text-700 center mr-3 p-1">w-16<br />h-16</div>
-            <div class="w-20 h-20 bg-gray-30 text-md text-mono text-700 center mr-3 p-1">w-20<br />h-20</div>
-          </div>
-          <div class="flex mb1">
-            <div class="w-24 h-24 bg-gray-30 text-md text-mono text-700 center mr-3 mb-3">w-24<br />h-24</div>
-            <div class="w-36 h-36 bg-gray-30 text-md text-mono text-700 center mr-3 mb-3">w-36<br />h-36</div>
-            <div class="w-48 h-48 bg-gray-30 text-md text-mono text-700 center mr-3 mb-3">w-48<br />h-48</div>
+            <div class="col-md-12">
+              <div class="w-12 bg-gray-30 text-md text-mono text-700 center mr-3 mb-2 p-1">w-12</div>
+            </div>
+            <div class="col-md-12">
+              <div class="w-16 bg-gray-30 text-md text-mono text-700 center mr-3 mb-2 p-1">w-16</div>
+            </div>
+            <div class="col-md-12">
+              <div class="w-20 bg-gray-30 text-md text-mono text-700 center mr-3 mb-2 p-1">w-20</div>
+            </div>
+            <div class="col-md-12">
+              <div class="w-12 h-12 bg-gray-30 text-md text-mono text-700 center mr-3 mb-2 p-1">w-12<br />h-12</div>
+            </div>
+            <div class="col-md-12">
+              <div class="w-16 h-16 bg-gray-30 text-md text-mono text-700 center mr-3 mb-2 p-1">w-16<br />h-16</div>
+            </div>
+            <div class="col-md-12">
+              <div class="w-20 h-20 bg-gray-30 text-md text-mono text-700 center mr-3 mb-2 p-1">w-20<br />h-20</div>
+            </div>
+            <div class="col-md-12">
+              <div class="w-24 h-24 bg-gray-30 text-md text-mono text-700 center mr-3 mb-2">w-24<br />h-24</div>
+            </div>
+            <div class="col-md-12">
+              <div class="w-36 h-36 bg-gray-30 text-md text-mono text-700 center mr-3 mb-2">w-36<br />h-36</div>
+            </div>
+            <div class="col-md-12">
+              <div class="w-48 h-48 bg-gray-30 text-md text-mono text-700 center mr-3 mb-2">w-48<br />h-48</div>
+            </div>
           </div>
 
           <pre class="mb-12">&lt;div class=&quot;flex mb-1&quot;&gt;
@@ -595,7 +609,9 @@
             </div>
           </div>
         </section>
-          <h3 id="buttons" class="mt-12">Buttons</h3>
+        <section class="mv-30">
+          <h1>Buttons, Forms, & Icons</h1>
+          <h2 id="buttons" class="mt-12">Buttons</h2>
 
           <p class="mt-2 mb-6">Buttons should be used according to priority. We have regular-sized buttons and small buttons.</p>
 
@@ -631,27 +647,39 @@
   &lt;button class=&quot;btn btn-sm mr-2 btn-warning&quot;&gt;Serious action&lt;/button&gt;
 &lt;/div&gt;</pre>
 
-          <h3 id="forms" class="mt-12">Forms</h3>
+          <h2 id="forms" class="mt-12">Forms</h2>
 
           <p class="mt-2 mb-4">Form inputs are always styled with an outline. You can combine these with button classes to create forms. </p>
 
           <div class="row">
-            <div class="col-md-4">
-              <div class="input-group">
-                <label>Name</label>
+            <div class="col-md-6">
+                <div class="input-group">
+                <label>Text</label>
                 <input type="text" />
               </div>
-              <div class="input-group error">
-                <label>Age</label>
-                <input type="text" value="John" />
+            </div>
+            <div class="col-md-5 col-md-offset-1">
+              <div class="input-group">
+                <label>Number</label>
+                <input type="number"/>
                 <div class="error-label">Age must be a number.</div>
               </div>
-              <div class="row">
-                <div class="checkbox-group mt-4 col-md-6">
-                  <b>Diet options?</b>
+            </div>
+              <div class="col-md-12">
+                <div class="input-group error">
+                  <label>Error state</label>
+                  <input type="email" value="myemail@email.com"/>
+                  <div class="error-label">Please enter a valid email address.</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <fieldset class="checkbox-group mt-4 col-md-6">
+                  <legend class="text-700 mb-2">Diet options?</legend>
                   <div class="input-group">
-                    <input type="checkbox" id="vegetarian" />
-                    <label for="vegetarian">Vegetarian</label>
+                    <input type="checkbox" name="options" id="vegetarian2"  value="on" />
+                    <label class="input-group" for="vegetarian2">
+                      Vegetarian
+                    </label>
                   </div>
                   <div class="input-group">
                     <input type="checkbox" id="vegan" />
@@ -661,9 +689,11 @@
                     <input type="checkbox" id="glutenfree" />
                     <label for="glutenfree">Gluten-free</label>
                   </div>
-                </div>
-                <div class="radio-group mt-4 col-md-6">
-                  <b>Favorite food?</b>
+                </fieldset>
+              </div>
+              <div class="col-md-6">
+                <fieldset class="radio-group mt-4 col-md-6">
+                  <legend class="text-700 mb-2">Favorite food?</legend>
                   <div class="input-group">
                     <input type="radio" name="favorite-food" id="pizza" />
                     <label for="pizza">Pizza</label>
@@ -676,30 +706,28 @@
                     <input type="radio" name="favorite-food" id="sandwich" />
                     <label for="sandwich">Sandwich</label>
                   </div>
-                </div>
+                </fieldset>
               </div>
             </div>
-            <div class="col-md-7 col-md-offset-1">
-              <div class="input-group">
-                <label>Message</label>
-                <textarea rows="6"></textarea>
-              </div>
-              <div class="input-group mt-8">
-                <label>Favorite sport?</label>
-                <div class="select-dropdown">
-                  <select name="favorite-sport">
-                    <option value="soccer">Soccer</option>
-                    <option value="football">Football</option>
-                    <option value="baseball">Baseball</option>
-                  </select>
-                  <div class="triangle-base triangle-down"></div>
-                </div>
+          <div class="col-md-12">
+            <div class="input-group">
+              <label>Message</label>
+              <textarea rows="6"></textarea>
+            </div>
+            <div class="input-group mt-8">
+              <label>Favorite sport?</label>
+              <div class="select-dropdown">
+                <select name="favorite-sport">
+                  <option value="soccer">Soccer</option>
+                  <option value="football">Football</option>
+                  <option value="baseball">Baseball</option>
+                </select>
+                <div class="triangle-base triangle-down"></div>
               </div>
             </div>
-            <button type="submit" class="btn btn-secondary mt-2 mb-8">Send</button>
+            <button type="submit" class="btn btn-secondary mv-4">Submit</button>
           </div>
-
-          <pre>&lt;!-- only subset of forms shown for brevity; inspect source to get full set --&gt;
+          <pre>
 &lt;div class=&quot;row&quot;&gt;
   &lt;div class=&quot;col-md-4&quot;&gt;
     &lt;div class=&quot;input-group&quot;&gt;
@@ -708,7 +736,7 @@
     &lt;/div&gt;
     &lt;div class=&quot;input-group error&quot;&gt;
       &lt;label&gt;Age&lt;/label&gt;
-      &lt;input type=&quot;text&quot; value=&quot;John&quot; /&gt;
+      &lt;input type=&quot;number&quot; value=&quot;John&quot; /&gt;
       &lt;div class=&quot;error-label&quot;&gt;Age must be a number.&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -722,7 +750,7 @@
 &lt;/div&gt;
           </pre>
 
-          <h3 id="icons" class="mt-12">Icons</h3>
+          <h2 id="icons" class="mt-12">Icons</h2>
 
           <p>Icons are roughly text-sized symbols, usually implemented in a font set (currently Work Sans)</p>
           <p>Two ways to implement icons:</p>
@@ -753,7 +781,7 @@
   &lt;icon&gt;&uarr;&lt;/icon&gt;
   &lt;icon class=&quot;icon-arrow-up&quot;&gt;&lt;/icon&gt;
   &lt;icon&gt;&darr;&lt;/icon&gt;
-  &lt;icon class=&quot;icon-arrow-down&quot;&gt;&lt;/icon&gt;
+  &lt;icon class=&quot;icon-arr2w-down&quot;&gt;&lt;/icon&gt;
   &lt;icon&gt;&larr;&lt;/icon&gt;
   &lt;icon&gt;&rarr;&lt;/icon&gt;
   &lt;icon class=&quot;icon-arrow-left&quot;&gt;&lt;/icon&gt;
@@ -768,7 +796,7 @@
 &lt;/h3&gt;</pre>
 
 
-          <h3 id="shapes" class="mt-12">Shapes</h3>
+          <h2 id="shapes" class="mt-12">Shapes</h2>
 
           <p>Shapes are CSS-drawn figures that are expandable, dynamic, or impossible to fit into a character set.</p>
 
