@@ -648,21 +648,18 @@
 &lt;/div&gt;</pre>
 
           <h2 id="forms" class="mt-12">Forms</h2>
-
-          <p class="mt-2 mb-4">Form inputs are always styled with an outline. You can combine these with button classes to create forms. </p>
-
+          <h3 class="mv-10">Inputs</h3>
           <div class="row">
             <div class="col-md-6">
                 <div class="input-group">
                 <label>Text</label>
-                <input type="text" />
+                <input type="text" placeholder="Placeholder text" />
               </div>
             </div>
             <div class="col-md-5 col-md-offset-1">
               <div class="input-group">
                 <label>Number</label>
                 <input type="number"/>
-                <div class="error-label">Age must be a number.</div>
               </div>
             </div>
               <div class="col-md-12">
@@ -672,6 +669,35 @@
                   <div class="error-label">Please enter a valid email address.</div>
                 </div>
               </div>
+            </div>
+              <pre>
+&lt;div class=&quot;col-md-6&quot;&gt;
+  &lt;div class=&quot;input-group&quot;&gt;
+    &lt;label&gt;Text&lt;/label&gt;
+    &lt;input type=&quot;text&quot; placeholder=&quot;Placeholder text&quot; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-md-6&quot;&gt;
+  &lt;div class=&quot;input-group&quot;&gt;
+    &lt;label&gt;Text&lt;/label&gt;
+    &lt;input type=&quot;text&quot; placeholder=&quot;Placeholder text&quot; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-md-5 col-md-offset-1&quot;&gt;
+  &lt;div class=&quot;input-group&quot;&gt;
+    &lt;label&gt;Number&lt;/label&gt;
+    &lt;input type="number"/&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-md-12&quot;&gt;
+  &lt;div class=&quot;input-group error&quot;&gt;
+    &lt;label&gt;Error state&gt;/label&gt;
+    &lt;input type=&quot;email&quot; value="&quot;myemail@email.com&quot;/&gt;
+    &lt;div class=&quot;error-label&quot;&gt;Please enter a valid email address.&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+            <h3 class="mv-10">Checkboxes & radio buttons</h3>
+            <div class="row">
               <div class="col-md-6">
                 <fieldset class="checkbox-group mt-4 col-md-6">
                   <legend class="text-700 mb-2">Diet options?</legend>
@@ -709,11 +735,58 @@
                 </fieldset>
               </div>
             </div>
+            <pre>
+&lt;div class="col-md-6"&gt;
+  &lt;fieldset class=&quot;checkbox-group mt-4 col-md-6&quot;&gt;
+    &lt;legend class=&quot;text-700 mb-2&quot;>Diet options?&lt;/legend&gt;
+    &lt;div class=&quot;input-group&quot;&gt;
+      &lt;input type=&quot;checkbox&quot; name=&quot;options&quot; id=&quot;vegetarian2&quot;  value=&quot;on&quot; /&gt;
+      &lt;label class=&quot;input-group&quot; for=&quot;vegetarian2&quot;&gt;
+        Vegetarian
+      &lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;input-group&quot;&gt;
+      &lt;input type=&quot;checkbox&quot; id="vegan&quot; /&gt;
+      &lt;label for="vegan&quot;>Vegan&lt;/label&gt;
+    &lt;/div>
+    &lt;div class=&quot;input-group&quot;>
+      &lt;input type=&quot;checkbox&quot; id=&quot;glutenfree&quot; /&gt;
+      &lt;label for=&quot;glutenfree&quot;>Gluten-free&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/fieldset&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-md-6&quot;&gt;
+  &lt;fieldset class=&quot;radio-group mt-4 col-md-6&quot;&gt;
+    &lt;legend class=&quot;text-700 mb-2&quot;>Favorite food?&lt;/legend&gt;
+    &lt;div class=&quot;input-group&quot;&gt;
+      &lt;input type=&quot;radio&quot; name=&quot;favorite-food&quot; id=&quot;pizza&quot; /&gt;
+      &lt;label for=&quot;pizza&quot;>Pizza&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;input-group&quot;&gt;
+      &lt;input type=&quot;radio&quot; name=&quot;favorite-food&quot; id=&quot;salad&quot; /&gt;
+      &lt;label for=&quot;salad&quot;>Salad&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;input-group&quot;&gt;
+      &lt;input type=&quot;radio&quot; name=&quot;favorite-food&quot; id=&quot;sandwich&quot; /&gt;
+      &lt;label for=&quot;sandwich&quot;>Sandwich&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/fieldset&gt;
+&lt;/div></pre>
+          <h3 class="mv-10">Textarea</h3>
           <div class="col-md-12">
             <div class="input-group">
               <label>Message</label>
-              <textarea rows="6"></textarea>
+              <textarea placeholder="Start typing..." rows="6"></textarea>
             </div>
+            <pre>
+&lt;div class=&quot;col-md-12&quot;&gt;
+  &lt;div class=&quot;input-group&quot;&gt;
+    &lt;label>Message&lt;/label&gt;
+    &lt;textarea placeholder=&quot;Start typing...&quot; rows=&quot;6&quot;>&lt;/textarea&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+            <h3 class="mv-10">Dropdown</h3>
             <div class="input-group mt-8">
               <label>Favorite sport?</label>
               <div class="select-dropdown">
@@ -728,29 +801,22 @@
             <button type="submit" class="btn btn-secondary mv-4">Submit</button>
           </div>
           <pre>
-&lt;div class=&quot;row&quot;&gt;
-  &lt;div class=&quot;col-md-4&quot;&gt;
-    &lt;div class=&quot;input-group&quot;&gt;
-      &lt;label&gt;Name&lt;/label&gt;
-      &lt;input type=&quot;text&quot; /&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;input-group error&quot;&gt;
-      &lt;label&gt;Age&lt;/label&gt;
-      &lt;input type=&quot;number&quot; value=&quot;John&quot; /&gt;
-      &lt;div class=&quot;error-label&quot;&gt;Age must be a number.&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;col-md-7 col-md-offset-1&quot;&gt;
-    &lt;div class=&quot;input-group&quot;&gt;
-      &lt;label&gt;Message&lt;/label&gt;
-      &lt;textarea rows=&quot;6&quot;&gt;&lt;/textarea&gt;
+&lt;div class=&quot;col-md-12&quot;&gt;
+  &lt;div class=&quot;input-group mt-8&quot;&gt;
+    &lt;label>Favorite sport?&lt;/label&gt;
+    &lt;div class=&quot;select-dropdown&quot;&gt;
+      &lt;select name=&quot;favorite-sport&quot;&gt;
+        &lt;option value=&quot;soccer&quot;>Soccer&lt;/option&gt;
+        &lt;option value=&quot;football&quot;>Football&lt;/option&gt;
+        &lt;option value=&quot;baseball&quot;>Baseball&lt;/option&gt;
+      &lt;/select&gt;
+      &lt;div class=&quot;triangle-base triangle-down&quot;>&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-  &lt;button type=&quot;submit&quot; class=&quot;btn btn-secondary&quot;&gt;Send&lt;/button&gt;
-&lt;/div&gt;
-          </pre>
+  &lt;button type=&quot;submit&quot; class=&quot;btn btn-secondary mv-4&quot;>Submit&lt;/button&gt;
+&lt;/div></pre>
 
-          <h2 id="icons" class="mt-12">Icons</h2>
+          <h2 id="icons" class="mt-20">Icons</h2>
 
           <p>Icons are roughly text-sized symbols, usually implemented in a font set (currently Work Sans)</p>
           <p>Two ways to implement icons:</p>
