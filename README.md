@@ -5,7 +5,7 @@ This is the base set of styles for [Urbit](https://urbit.org).
 The goal is to provide a base stylesheet that is
 
 - simple,
-- pracitcal,
+- practical,
 - and extensible.
 
 That's it.  You can read a bit more about our thinking [here]().
